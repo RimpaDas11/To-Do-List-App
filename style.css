@@ -1,0 +1,112 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main Card Container */
+.container {
+  background: #fff;
+  padding: 20px;
+  width: 95%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.task-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.task-input input, .task-input select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.task-input button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.task-input button:hover {
+  background: #0056b3;
+}
+
+/* Error Message */
+#errorMsg {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Task List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+.task-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+.task-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Buttons */
+.actions button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit-btn { background: #ffc107; color: white; }
+.delete-btn { background: #dc3545; color: white; }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .task-input {
+    flex-direction: column;
+  }
+  .task-input button {
+    width: 100%;
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}

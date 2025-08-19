@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>To-Do List</h2>
+    
+    <!-- Task Input Section -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <select id="priority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <input type="date" id="dueDate">
+      <button id="addBtn">Add</button>
+    </div>
+    <footer>
+    <p>Developed by Rimpa Das | To-Do List App</p>
+    </footer>
+</body>
+</html>
+
+
+    <!-- Error Message -->
+    <p id="errorMsg"></p>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
